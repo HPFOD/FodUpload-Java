@@ -181,14 +181,14 @@ public class FortifyCommands {
     private static final String TENANT_CODE = "-tenantCode";
     private static final String TENANT_CODE_SHORT = "-tc";
     @Parameter(names = {TENANT_CODE,TENANT_CODE_SHORT},
-            description = "Tenant identifier",
+            description = "Tenant identifier ",
             required = false)
     public String tenantCode;
 
     private static final String IS_POLICY_FAILURE = "-allowPolicyFail";
     private static final String IS_POLICY_FAILURE_SHORT = "-apf";
     @Parameter(names = {IS_POLICY_FAILURE, IS_POLICY_FAILURE_SHORT },
-            description = "Flag allows to exit with 0 code even if policy fails")
+            description = "whether the scan is a bundled assessment")
     public boolean allowPolicyFail = false;
 
     private static final String ASSESSMENT_TYPE_ID = "-assessmentTypeId";
